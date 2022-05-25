@@ -1,0 +1,13 @@
+.spacer{
+    flex: auto;
+}
+
+button{
+    &:last-of-type{
+        margin-left: 10px;
+    }
+}
+
+.outlet-container{
+    margin: 10px;
+}

@@ -1,4 +1,19 @@
 <mat-toolbar color="primary">
   <span>Store App</span>
+  <span class="spacer"></span>
+  <button mat-raised-button color="warn" routerLink="products">Products</button>
+  <button mat-raised-button color="warn" [matMenuTriggerFor]="menu">Settings</button>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="settings">Item 1</button>
+    <button mat-menu-item routerLink="settings">Item 2</button>
+  </mat-menu>
 </mat-toolbar>
-<router-outlet></router-outlet>
+<div class="outlet-container">
+  <router-outlet></router-outlet>
+</div>
+<div class="footer">
+  <mat-toolbar color="primary">
+    <span>Store App Footer</span>
+  </mat-toolbar>
+</div>

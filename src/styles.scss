@@ -1,4 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body { min-height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.page-ctrl{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.mat-form-field{
+    &:not(:first-of-type){
+        margin:0 5px;
+    }
+}
+
+.mat-dialog-actions{
+    justify-content: end;
+}
+
+.mat-card-content{
+    padding-top: 10px;
+}
+
+.search-container{
+    border: 1px solid rgb(188, 186, 186);
+    border-radius: 6px;
+    width: 33%;
+    height: 30px;
+    margin: 0 auto;
+    padding: 2px 4px;
+    input{
+        width: 100%;
+        font-size: 14px;
+        border: none;
+        line-height: 27px;
+        &:focus-visible{
+            outline: none;
+        }
+    }
+}
+
+.footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
