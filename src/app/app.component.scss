@@ -1,13 +1,22 @@
 .spacer{
     flex: auto;
 }
-
-button{
-    &:last-of-type{
-        margin-left: 10px;
+.mat-toolbar{
+    &>button{
+        &:last-of-type{
+            margin-left: 10px;
+        }
     }
 }
 
 .outlet-container{
     margin: 10px;
+    height: 100%;
+    flex: 1;
+}
+
+.app-container{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }

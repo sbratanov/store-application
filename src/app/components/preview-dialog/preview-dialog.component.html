@@ -1,0 +1,22 @@
+<h1 mat-dialog-title>Preview</h1>
+<div mat-dialog-content>
+    <div>
+        <div>
+            <span>Name:</span>
+            <span>{{data.name}}</span>
+        </div>
+        <div>
+            <span>Price:</span>
+            <span>{{data.price}}</span>
+        </div>
+        <div>
+            <span>In Stock:</span>
+            <span>{{data.available? 'Yes': 'No'}}</span>
+        </div>
+    </div>
+
+</div>
+
+<div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Close</button>
+</div>

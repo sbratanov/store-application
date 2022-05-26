@@ -11,14 +11,17 @@ import { CreateItemComponent } from 'src/app/components/create-item/create-item.
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import {MatCheckboxModule} from '@angular/material/checkbox';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatMenuModule } from '@angular/material/menu';
+import { PreviewDialogComponent } from 'src/app/components/preview-dialog/preview-dialog.component';
 
 
 @NgModule({
   declarations: [
     ConfirmationDialogComponent,
-    CreateItemComponent],
+    CreateItemComponent,
+    PreviewDialogComponent
+  ],
   imports: [
     CommonModule,
     MatButtonModule,
@@ -28,7 +31,8 @@ import {MatMenuModule} from '@angular/material/menu';
     MatFormFieldModule,
     MatInputModule,
     MatCheckboxModule,
-    MatMenuModule
+    MatMenuModule,
+    MatIconModule,
   ],
   exports: [
     MatCardModule,

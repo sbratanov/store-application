@@ -3,6 +3,17 @@
 html, body { min-height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+.pointer{
+    cursor: pointer;
+}
+
+.table-row{
+    &:hover{
+        td{
+            background-color: lightgrey;
+        }
+    }
+}
 .page-ctrl{
     margin-bottom: 10px;
     display: flex;
@@ -42,7 +53,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .footer{
-    width: 100%;
-    position: relative;
-    bottom: 0;
+   bottom:0;
+   width:100%;
 }
+
+.mat-icon-button{
+    &:hover{
+        background-color: lighten(#617c7e, 30);
+    }
+}
+

@@ -5,6 +5,7 @@ import { MatTable } from '@angular/material/table';
 import { debounceTime, distinctUntilChanged, filter, map } from 'rxjs';
 import { ConfirmationDialogComponent } from 'src/app/components/confirmation-dialog/confirmation-dialog.component';
 import { CreateItemComponent } from 'src/app/components/create-item/create-item.component';
+import { PreviewDialogComponent } from 'src/app/components/preview-dialog/preview-dialog.component';
 import { Item } from 'src/app/models/item';
 import { DataService } from 'src/app/services/data.service';
 
@@ -91,4 +92,10 @@ export class ListComponent implements OnInit {
     })
   }
 
+  openPreview(item: Item){
+    this._dialog.open(PreviewDialogComponent, {
+      minWidth: '500px',
+      data: item
+    })
+  }
 }
